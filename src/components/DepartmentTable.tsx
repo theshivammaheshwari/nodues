@@ -9,7 +9,7 @@ const departments: Department[] = [
   { name: 'Accounts' },
   { name: 'Central Library' },
   { name: 'Store' },
-  { name: 'LT/CC' },
+  { name: 'LUCS' },
   { name: 'Warden (In-charge)' },
   { name: 'Administration' },
   { name: 'Sports' },
