@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-900 bg-gray-50;
+  }
+  
+  input {
+    @apply transition-all duration-200;
+  }
+}
+
+@media print {
+  @page {
+    size: A4;
+    margin: 0.5cm;
+  }
+  
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    font-size: 12px;
+  }
+  
+  .print-hidden {
+    display: none !important;
+  }
+  
+  input {
+    @apply border-gray-800;
+  }
+
+  table {
+    font-size: 11px;
+  }
+
+  th, td {
+    padding: 4px 8px !important;
+  }
+}
